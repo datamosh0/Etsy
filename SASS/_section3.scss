@@ -1,0 +1,131 @@
+@import "config";
+.section3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  left: 0.5%;
+  margin-top: 2rem;
+
+  &-shop,
+  &-explore {
+    display: none;
+  }
+
+  &-grid1,
+  &-grid2 {
+    display: flex;
+  }
+  &-img1,
+  &-img2,
+  &-img3,
+  &-img4,
+  &-img5,
+  &-img6 {
+    flex-grow: 1;
+    flex-basis: 49%;
+    max-width: 49%;
+    border-radius: 0.5rem;
+    margin: 0 0.5rem 0.5rem 0;
+  }
+  &-img {
+    &:hover {
+      box-shadow: 0 0 1rem #bbb;
+    }
+  }
+
+  &-title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-gray {
+    color: $gray-color;
+    font-weight: 100;
+  }
+  &-title {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  &-shop {
+    font-weight: 500;
+    &:hover {
+      .arrow {
+        margin-left: 0.3rem;
+      }
+    }
+  }
+  &-explore {
+    align-self: center;
+    font-family: "Bitter", monospace;
+    font-size: 1.1rem;
+  }
+  &-more {
+    &:hover {
+      .arrow {
+        margin-left: 0.3rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 730px) {
+  .section3 {
+    display: inline;
+    text-align: initial;
+    left: 0.75%;
+
+    &-container1,
+    &-container2 {
+      display: flex;
+    }
+    &-container1 {
+      margin-left: 1rem;
+    }
+    &-grid1,
+    &-grid2 {
+      width: 71.5%;
+    }
+
+    &-explore {
+      margin-right: 1rem;
+    }
+
+    &-title-section {
+      min-width: 27.5%;
+    }
+
+    &-img1,
+    &-img6 {
+      flex-basis: 25%;
+      min-width: 25%;
+    }
+    &-img2,
+    &-img3,
+    &-img4,
+    &-img5 {
+      flex-basis: 18.5%;
+      min-width: 18.5%;
+    }
+
+    &-shop,
+    &-explore {
+      display: inline;
+    }
+    &-title {
+      margin-top: 1rem;
+    }
+
+    &-more {
+      display: none;
+    }
+  }
+}
+
+.arrow {
+  width: 1.1rem;
+  position: relative;
+  top: 0.25rem;
+}

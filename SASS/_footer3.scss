@@ -1,0 +1,22 @@
+@import "config";
+.footer3 {
+  background: #4d6bc6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  img {
+    width: 4rem;
+  }
+  .renew {
+    margin: 0.4rem;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 0.2rem;
+    text-align: center;
+  }
+}

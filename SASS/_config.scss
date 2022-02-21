@@ -1,0 +1,44 @@
+$secondary-color: #e6e1f0;
+$gray-color: #808080;
+$off-white: #f3f3f3;
+$font-fancy: "Bitter", monospace;
+$font-robot: "Roboto", monospace;
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Roboto&display=swap");
+* {
+  font-family: "Roboto", monospace;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin line-clamp($numLines: 2, $lineHeight: 1.412) {
+  overflow: hidden;
+  text-overflow: -o-ellipsis-lastline;
+  text-overflow: ellipsis;
+  display: block;
+  /* autoprefixer: off */
+  display: -webkit-box;
+  -webkit-line-clamp: $numLines;
+  -webkit-box-orient: vertical;
+  max-height: $numLines * $lineHeight + unquote("em");
+}
+
+.displayNone {
+  opacity: 0;
+  height: 0;
+  pointer-events: none;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hidden {
+  display: none;
+}

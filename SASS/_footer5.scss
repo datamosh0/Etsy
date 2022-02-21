@@ -1,0 +1,19 @@
+.footer5 {
+  background: #232347;
+  color: white;
+  padding: 1rem 0;
+  &-copyright {
+    text-align: center;
+    padding: 1rem;
+  }
+  &-nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    color: white;
+    a {
+      color: inherit;
+    }
+  }
+}

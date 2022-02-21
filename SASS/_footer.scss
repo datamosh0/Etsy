@@ -1,0 +1,70 @@
+.footer {
+  background: #fdebd3;
+  padding-bottom: 4rem;
+  &-title {
+    text-align: center;
+    padding-top: 1.5rem;
+    font-family: $font-fancy;
+    font-size: 3rem;
+  }
+  &-link {
+    text-align: center;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    a {
+      color: #222;
+    }
+  }
+  &-stories {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  &-story-title {
+    font-weight: 900;
+    font-size: 2.2rem;
+    padding: 1.2rem;
+  }
+  &-story-content {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-family: $font-fancy;
+  }
+
+  &-question {
+    font-weight: 900;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+  &-button {
+    width: 17rem;
+    background-color: #fdebd3;
+    border: 2px solid black;
+    outline: none;
+    height: 4rem;
+    outline: none;
+    border-radius: 3rem;
+    font-weight: 900;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      height: 4.25rem;
+      box-shadow: 0 0 1rem #bbb;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .footer {
+    &-stories {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

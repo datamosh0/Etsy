@@ -1,0 +1,39 @@
+@import "config";
+.footer2 {
+  background: #d7e6f5;
+  padding: 2rem 0 3rem 0;
+  font-size: 1.3rem;
+
+  &-yes {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  &-input {
+    margin: 1rem;
+    height: 3.5rem;
+    border-radius: 4rem;
+    outline: none;
+    border: none;
+    text-indent: 1rem;
+    font-size: inherit;
+    min-width: 15rem;
+    width: 30%;
+  }
+
+  &-sub {
+    font-size: 1rem;
+    font-weight: 900;
+    height: 3.5rem;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: #4d6bc6;
+    color: white;
+    cursor: pointer;
+  }
+  .flexCenter {
+    flex-wrap: wrap;
+  }
+}

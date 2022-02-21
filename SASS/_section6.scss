@@ -1,0 +1,77 @@
+@import "config";
+
+.section6 {
+  margin-left: 2%;
+  &-gray {
+    color: $gray-color;
+  }
+  &-title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    &:hover {
+      .arrow {
+        margin-left: 0.3rem;
+      }
+    }
+  }
+  &-tiles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-tile {
+    flex-grow: 1;
+    flex-basis: 47%;
+    max-width: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5%;
+    border: 1px $off-white solid;
+    margin: 0.2rem;
+    &:hover {
+      box-shadow: 0 0 1rem #ccc;
+      cursor: pointer;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;
+      border-bottom: 1px $off-white solid;
+    }
+  }
+  &-topic {
+    margin: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 660px) {
+  .section6 {
+    margin-left: 1%;
+    &-tile {
+      flex-basis: 32.33%;
+      max-width: 32.33%;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .section6 {
+    &-tile {
+      flex-basis: 19.2%;
+      max-width: 19.2%;
+    }
+    &-tile:last-child {
+      display: none;
+    }
+  }
+}
+
+.arrow {
+  width: 1.1rem;
+  position: relative;
+  top: 0.2rem;
+  transition: 0.2s;
+}
