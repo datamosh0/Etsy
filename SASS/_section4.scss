@@ -1,6 +1,6 @@
 @import "config";
 
-.section6 {
+.section4 {
   margin-left: 2%;
   &-gray {
     color: $gray-color;
@@ -49,7 +49,7 @@
   }
 }
 @media screen and (min-width: 660px) {
-  .section6 {
+  .section4 {
     margin-left: 1%;
     &-tile {
       flex-basis: 32.33%;
@@ -58,7 +58,7 @@
   }
 }
 @media screen and (min-width: 900px) {
-  .section6 {
+  .section4 {
     &-tile {
       flex-basis: 19.2%;
       max-width: 19.2%;

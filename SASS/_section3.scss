@@ -18,6 +18,9 @@
   &-grid2 {
     display: flex;
   }
+  &-hide-img {
+    opacity: 0;
+  }
   &-img1,
   &-img2,
   &-img3,
@@ -87,6 +90,9 @@
     &-grid1,
     &-grid2 {
       width: 71.5%;
+    }
+    &-hide-img {
+      opacity: 1;
     }
 
     &-explore {

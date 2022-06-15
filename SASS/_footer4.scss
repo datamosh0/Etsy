@@ -35,6 +35,14 @@
   &-items {
     transition: 0.3s;
   }
+
+  &-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
   .img {
     width: 4rem;
     border-radius: 50%;
@@ -48,9 +56,7 @@
     width: 2rem;
     margin-right: 0.5rem;
   }
-  .end {
-    flex-direction: column;
-  }
+
   .app {
     padding: 0.5rem 1rem;
     border: 3px white solid;
@@ -88,6 +94,9 @@
     }
     &-items {
       height: auto;
+    }
+    &-social {
+      height: 20rem;
     }
   }
   .end {

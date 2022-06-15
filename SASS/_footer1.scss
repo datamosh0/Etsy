@@ -1,4 +1,4 @@
-.footer {
+.footer1 {
   background: #fdebd3;
   padding-bottom: 4rem;
   &-title {
@@ -62,7 +62,7 @@
 }
 
 @media screen and (min-width: 900px) {
-  .footer {
+  .footer1 {
     &-stories {
       grid-template-columns: repeat(3, 1fr);
     }
